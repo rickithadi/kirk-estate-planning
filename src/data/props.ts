@@ -74,41 +74,21 @@ export const heroProps: HeroProps = {
       "html": "",
       "links": [
         {
-          "text": "",
-          "href": "https://kirkestateplanning.com/"
+          "text": "Free Consultation",
+          "href": "/consultation"
         },
         {
-          "text": "Consultation",
-          "href": "https://kirkestateplanning.com/consultation"
+          "text": "Learn About Wills",
+          "href": "/wills"
         },
         {
-          "text": "Wills",
-          "href": "https://kirkestateplanning.com/wills"
-        },
-        {
-          "text": "Trusts",
-          "href": "https://kirkestateplanning.com/trusts"
-        },
-        {
-          "text": "Values",
-          "href": "https://kirkestateplanning.com/values"
-        },
-        {
-          "text": "Emily",
-          "href": "https://kirkestateplanning.com/emily"
-        },
-        {
-          "text": "Reviews",
-          "href": "https://kirkestateplanning.com/reviews"
-        },
-        {
-          "text": "Blog",
-          "href": "https://kirkestateplanning.com/blog"
+          "text": "Learn About Trusts",
+          "href": "/trusts"
         }
       ]
     }
   ],
-  "backgroundImage": "/api/placeholder/1200/600"
+  "backgroundImage": "data:image/svg+xml,%3Csvg width='1200' height='600' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23f3f4f6'/%3E%3C/svg%3E"
 };
 
 export const headerProps: HeaderProps = {
@@ -119,43 +99,43 @@ export const headerProps: HeaderProps = {
       "html": "",
       "links": [
         {
-          "text": "",
-          "href": "https://kirkestateplanning.com/"
+          "text": "Home",
+          "href": "/"
         },
         {
           "text": "Consultation",
-          "href": "https://kirkestateplanning.com/consultation"
+          "href": "/consultation"
         },
         {
           "text": "Wills",
-          "href": "https://kirkestateplanning.com/wills"
+          "href": "/wills"
         },
         {
           "text": "Trusts",
-          "href": "https://kirkestateplanning.com/trusts"
+          "href": "/trusts"
         },
         {
           "text": "Values",
-          "href": "https://kirkestateplanning.com/values"
+          "href": "/values"
         },
         {
           "text": "Emily",
-          "href": "https://kirkestateplanning.com/emily"
+          "href": "/emily"
         },
         {
           "text": "Reviews",
-          "href": "https://kirkestateplanning.com/reviews"
+          "href": "/reviews"
         },
         {
           "text": "Blog",
-          "href": "https://kirkestateplanning.com/blog"
+          "href": "/blog"
         }
       ]
     }
   ],
   "contactInfo": {
-    "phone": "",
-    "email": ""
+    "phone": "(314) 266-2649",
+    "email": "emily@kirkestateplanning.com"
   }
 };
 

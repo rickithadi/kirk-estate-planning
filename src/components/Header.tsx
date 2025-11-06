@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          {navigation[0].links.map((link, index) => (
+          {navigation[0]?.links?.map((link, index) => (
             <NavLink
               key={index}
               to={link.href}
@@ -68,7 +68,7 @@ const Header: React.FC<HeaderProps> = ({
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              {navigation[0].links.map((link, index) => (
+              {navigation[0]?.links?.map((link, index) => (
                 <li key={index}>
                   <Link to={link.href}>{link.text}</Link>
                 </li>

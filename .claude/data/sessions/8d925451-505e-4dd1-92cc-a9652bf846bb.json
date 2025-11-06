@@ -1,0 +1,10 @@
+{
+  "session_id": "8d925451-505e-4dd1-92cc-a9652bf846bb",
+  "prompts": [
+    "[plugin:vite:react-babel] /Users/hadi.rickit/modernized-sites/kirk-estate-planning/src/components/SEOHead.tsx: Expecting Unicode escape sequence \\uXXXX. (51:24)\n  54 |\n\n/Users/hadi.rickit/modernized-sites/kirk-estate-planning/src/components/SEOHead.tsx:51:24\n\n49 |  \n50 |      const upsertMetaByName = (name: string, value?: string | null) => {\n51 |        const selector = \\`meta[name=\"\\${name}\"][\\${MANAGED_ATTRIBUTE}=\"\\${MANAGED_VALUE}\"]\\`;\n   |                          ^\n52 |        const existing = head.querySelector(selector) as HTMLMetaElement | null;\n53 |        const content = value?.trim();",
+    "run dev server",
+    "Uncaught TypeError: can't access property \"map\", cta.links is undefined\n    Hero Hero.tsx:38\n    React 10\n    performWorkUntilDeadline scheduler.development.js:45\n",
+    "debug why the site doesnt run",
+    "use CRAWL_DATA.md as copy. create pages found in nav and correspondingly update links"
+  ]
+}

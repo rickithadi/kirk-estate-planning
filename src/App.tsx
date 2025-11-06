@@ -1,27 +1,27 @@
-import Hero from './components/Hero';
-import Header from './components/Header';
-import Section1 from './components/Section1';
-import Section2 from './components/Section2';
-import Section3 from './components/Section3';
-import Section4 from './components/Section4';
-import Section5 from './components/Section5';
-import Footer from './components/Footer';
-import SEOHead from './components/SEOHead';
-import { heroProps, headerProps, section1Props, section2Props, section3Props, section4Props, section5Props, footerProps } from './data/props';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Consultation from './pages/Consultation';
+import Wills from './pages/Wills';
+import Trusts from './pages/Trusts';
+import Values from './pages/Values';
+import Emily from './pages/Emily';
+import Reviews from './pages/Reviews';
+import Blog from './pages/Blog';
 
 function App() {
   return (
-    <div className="App">
-      <SEOHead />
-      <Hero {...heroProps} />
-      <Header {...headerProps} />
-      <Section1 {...section1Props} />
-      <Section2 {...section2Props} />
-      <Section3 {...section3Props} />
-      <Section4 {...section4Props} />
-      <Section5 {...section5Props} />
-      <Footer {...footerProps} />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/consultation" element={<Consultation />} />
+        <Route path="/wills" element={<Wills />} />
+        <Route path="/trusts" element={<Trusts />} />
+        <Route path="/values" element={<Values />} />
+        <Route path="/emily" element={<Emily />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

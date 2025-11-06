@@ -48,7 +48,7 @@ const SEOHead: FC<SEOHeadProps> = ({
     };
 
     const upsertMetaByName = (name: string, value?: string | null) => {
-      const selector = \`meta[name="\${name}"][\${MANAGED_ATTRIBUTE}="\${MANAGED_VALUE}"]\`;
+      const selector = `meta[name="${name}"][${MANAGED_ATTRIBUTE}="${MANAGED_VALUE}"]`;
       const existing = head.querySelector(selector) as HTMLMetaElement | null;
       const content = value?.trim();
 
@@ -69,7 +69,7 @@ const SEOHead: FC<SEOHeadProps> = ({
     };
 
     const upsertMetaByProperty = (property: string, value?: string | null) => {
-      const selector = \`meta[property="\${property}"][\${MANAGED_ATTRIBUTE}="\${MANAGED_VALUE}"]\`;
+      const selector = `meta[property="${property}"][${MANAGED_ATTRIBUTE}="${MANAGED_VALUE}"]`;
       const existing = head.querySelector(selector) as HTMLMetaElement | null;
       const content = value?.trim();
 
@@ -96,7 +96,7 @@ const SEOHead: FC<SEOHeadProps> = ({
       id?: string
     ) => {
       const identifier = id ?? rel;
-      const selector = \`link[\${MANAGED_ATTRIBUTE}="\${MANAGED_VALUE}"][data-id="\${identifier}"]\`;
+      const selector = `link[${MANAGED_ATTRIBUTE}="${MANAGED_VALUE}"][data-id="${identifier}"]`;
       const existing = head.querySelector(selector) as HTMLLinkElement | null;
       const resolvedHref = href?.trim();
 
@@ -124,7 +124,7 @@ const SEOHead: FC<SEOHeadProps> = ({
     };
 
     const upsertJsonLd = (id: string, content: string) => {
-      const selector = \`script[type="application/ld+json"][data-id="\${id}"][\${MANAGED_ATTRIBUTE}="\${MANAGED_VALUE}"]\`;
+      const selector = `script[type="application/ld+json"][data-id="${id}"][${MANAGED_ATTRIBUTE}="${MANAGED_VALUE}"]`;
       let script = head.querySelector(selector) as HTMLScriptElement | null;
 
       if (!script) {
@@ -141,7 +141,7 @@ const SEOHead: FC<SEOHeadProps> = ({
     const resolvedTitle = title?.trim() ? title : DEFAULT_SITE_TITLE;
     const fullTitle = resolvedTitle.includes(DEFAULT_SITE_IDENTIFIER)
       ? resolvedTitle
-      : \`\${resolvedTitle} | \${DEFAULT_SITE_TITLE}\`;
+      : `${resolvedTitle} | ${DEFAULT_SITE_TITLE}`;
     const resolvedDescription = description?.trim() ? description : DEFAULT_DESCRIPTION;
     const resolvedCanonical = canonicalUrl?.trim() ? canonicalUrl : DEFAULT_CANONICAL_URL;
 

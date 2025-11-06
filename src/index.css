@@ -16,3 +16,21 @@
     font-family: var(--font-heading);
   }
 }
+
+@layer utilities {
+  .text-brand-1 {
+    @apply text-blue-600;
+  }
+  
+  .text-brand-5 {
+    @apply text-gray-600;
+  }
+  
+  .bg-brand-6 {
+    @apply bg-white;
+  }
+  
+  .hover\:text-brand-1:hover {
+    @apply text-blue-600;
+  }
+}

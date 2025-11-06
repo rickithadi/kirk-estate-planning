@@ -5,10 +5,10 @@ interface HeroProps {
   heading: string;
   subheading: string;
   fullText: string;
-  cta: {
+  cta: Array<{
     html: string;
     links: Array<{ text: string; href: string }>;
-  };
+  }>;
   backgroundImage: string;
 }
 
@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({
             <div className="card-body">
               <p>{fullText}</p>
               <div className="card-actions justify-end">
-                {cta.links.map((link, index) => (
+                {cta[0]?.links?.map((link, index) => (
                   <Link
                     key={index}
                     to={link.href}
