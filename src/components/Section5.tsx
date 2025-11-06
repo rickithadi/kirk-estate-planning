@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 interface Section5Props {
   heading: string;
@@ -35,13 +35,23 @@ const Section5: React.FC<Section5Props> = ({
             </p>
             <div className="flex flex-wrap gap-4">
               {links.map((link, index) => (
-                <Link
-                  key={index}
-                  to={link.href}
-                  className="btn btn-primary bg-brand-3 hover:bg-brand-4 text-white"
-                >
-                  {link.text}
-                </Link>
+                link.href.startsWith('http') || link.href.startsWith('tel:') || link.href.startsWith('mailto:') ? (
+                  <a
+                    key={index}
+                    href={link.href}
+                    className="btn btn-primary bg-brand-3 hover:bg-brand-4 text-white"
+                  >
+                    {link.text}
+                  </a>
+                ) : (
+                  <Link
+                    key={index}
+                    to={link.href}
+                    className="btn btn-primary bg-brand-3 hover:bg-brand-4 text-white"
+                  >
+                    {link.text}
+                  </Link>
+                )
               ))}
             </div>
           </div>

@@ -66,33 +66,29 @@ export interface FooterProps {
 }
 
 export const heroProps: HeroProps = {
-  "heading": "Wills and trusts made easy.",
-  "subheading": "[(314) 266-2649](tel:3142662649)",
-  "fullText": "Services About Emily Resources Wills and trusts made easy. Wills and trusts made easy.Wills and trusts made easy. Estate planning with expertise, care, and a personal connection. Services In Missouri and illinois Initial Consultation Initial Consultation Start planning your estate with a free initial consultation with Emily. You don't need to prepare or bring anything. We'll have a conversation to discuss your needs, answer questions, and help you establish your estate planning goals. We offer remote and in person consultations. Free of Charge Will Package Initial Consultation A Last Will & Testament provides instructions to the probate court indicating your exact wishes about who will care for your children, who is in charge of implementing your wishes (your executor) and how your assets will be distributed. Your will and all other documents filed with the probate court will be public record. Trust Package Trust Package A Revocable Trust accomplishes everything that a will does, but with the significant advantage of avoiding the probate process. “Revocable” means that you retain control over your finances, possessions, and wishes. At any time during your life, you can change or even revoke your Revocable Trust. Emily Kirk Background and Qualifications I grew up in central Illinois and have lived in St. Louis since the early 1990s. I graduated from the Washington University School of Law in St. Louis and practice law in Missouri and Illinois. I practiced business litigation for several years and also spent a decade working in higher education. My husband and I enjoy participating in local trivia nights and spending time with our two children. Estate Planning I was trained in estate planning by a prestigious, nationally recognized law firm and found that it was an area of practice that I loved. I have helped hundreds of clients with their wills, trusts, and estate planning needs. Focus I enjoy working with estate planning clients because of the positive outcomes and the peace of mind that clients experience when it's all done. It is the most rewarding work of my career. That's why it's all I do. Social Reviews from Clients Emily Kirk did a wonderful job of explaining everything to us. She wanted some questions answered prior to our signing, and she took the time to give me a call to discuss. We were especially grateful for the Saturday appointment, especially with my husband and me working day/evening hours. My husband and I are very pleased with her and the firm. Will definitely contact again if we have a need. Ted and Linda Florissant, MO Emily was able to meld our vision and complex situation into a comprehensive, simple to understand estate plan. She was a pleasure to work with as we worked through several issues. Lastly, she has her own family and understands the importance of a family protecting their estate. I highly recommend Emily. Konrad and Darla O'Fallon, IL We had several adjustments to my trust. Emily was very careful and she did a great job explaining the details. I feel confident that the final document is precisely what I need to protect my heirs. Robert M. Kirkwood, MO We had been putting off getting our wills in order for more than 10 years. Always seemed such a daunting task to find a qualified and affordable lawyer to do this. Emily Kirk was our attorney and she did a great job of answering our questions. We had one face to face meeting, she drafted our documents that we reviewed electronically, then we met again for final review and signing. Simple, easy and frankly very affordable. My wife and I are very pleased to know that we have checked this important item off our to do list. Thanks Emily! Kerry K. St. Louis, MO Emily Kirk did a tremendous job, she explained everything in detail and in such a manner it could be understood. She was professional but at the same time made Kelly and I feel at ease. Overall a great experience. Kelly and Donald Belleville, IL Emily did a great job leading us through the process. Barbara and Dave St. Louis, MO I was very pleased with the competency and professionalism of Emily Kirk. Susan St. Louis, MO Contact Me Let's start the conversation. Emily Kirk, Kirk Estate Planning, LLC 168 N Meramec Ave Suite 150, Clayton, MO 63105 Hours Open today | 09:00 am – 06:00 pm | | | I can accommodate your busy schedule. Schedule an appointment Schedule an appointment Name Email This site is protected by reCAPTCHA and the Google and apply. Send Cancel Copyright © 2025 Kirk Estate Planning All Rights Reserved. Powered by This website uses cookies. We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.",
+  "heading": "Fixed-fee estate planning made human.",
+  "subheading": "Emily Kirk guides Missouri & Illinois families through wills and trusts with personal, remote-ready service.",
+  "fullText": "Know exactly what to expect before you sign. Every engagement starts with a complimentary strategy call so you can ask questions, compare options, and leave with a clear roadmap.",
   "cta": [
     {
       "html": "",
       "links": [
         {
-          "text": "Free Consultation",
+          "text": "Book Free Consultation",
           "href": "/consultation"
         },
         {
-          "text": "Learn About Wills",
-          "href": "/wills"
-        },
-        {
-          "text": "Learn About Trusts",
+          "text": "Compare Will vs. Trust",
           "href": "/trusts"
         }
       ]
     }
   ],
-  "backgroundImage": "data:image/svg+xml,%3Csvg width='1200' height='600' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23f3f4f6'/%3E%3C/svg%3E"
+  "backgroundImage": "https://img1.wsimg.com/isteam/ip/2af68cd7-c864-437a-9148-1fae4248531f/Family%20inside%202.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:800,cg:true"
 };
 
 export const headerProps: HeaderProps = {
-  "siteName": "Kirk Estate Planning - Estate Planning, Wills Trusts",
+  "siteName": "Kirk Estate Planning",
   "logo": [],
   "navigation": [
     {
@@ -103,7 +99,7 @@ export const headerProps: HeaderProps = {
           "href": "/"
         },
         {
-          "text": "Consultation",
+          "text": "Services",
           "href": "/consultation"
         },
         {
@@ -127,8 +123,12 @@ export const headerProps: HeaderProps = {
           "href": "/reviews"
         },
         {
-          "text": "Blog",
+          "text": "Resources",
           "href": "/blog"
+        },
+        {
+          "text": "Contact",
+          "href": "/consultation"
         }
       ]
     }
@@ -140,48 +140,124 @@ export const headerProps: HeaderProps = {
 };
 
 export const section1Props: Section1Props = {
-  "heading": "Section 1",
-  "content": "",
-  "images": [],
-  "links": [],
+  "heading": "How we move families from uncertainty to finished plans",
+  "content": "Start with a 30-minute strategy call, choose the right package with transparent pricing, then finalize documents with clear next steps and signing support.",
+  "images": [
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/4089/:/cr=t:12.53%25,l:0%25,w:100%25,h:74.93%25/rs=w:388,h:194,cg:true",
+      "alt": "Client consultation"
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/2af68cd7-c864-437a-9148-1fae4248531f/b909a9fe-e535-4b1b-85ba-5b1f6c6dce30.jpg/:/rs=w:388,h:194,cg:true,m/cr=w:388,h:194",
+      "alt": "Estate planning meeting"
+    }
+  ],
+  "links": [
+    {
+      "text": "Book Free Consultation",
+      "href": "/consultation"
+    }
+  ],
   "id": "section-1"
 };
 
 export const section2Props: Section2Props = {
-  "heading": "Section 2",
-  "content": "",
-  "images": [],
-  "links": [],
+  "heading": "Choose the plan that fits your family",
+  "content": "Will Package – guardianship guidance, executor instructions, and probate-ready documents. Trust Package – everything in the will plus probate avoidance, disability planning, and funding support.",
+  "images": [
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/10969/:/cr=t:5.36%25,l:0%25,w:100%25,h:89.29%25/rs=w:388,h:194,cg:true",
+      "alt": "Family reviewing documents"
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/2af68cd7-c864-437a-9148-1fae4248531f/Family%20inside%202.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:400,cg:true",
+      "alt": "Parents with children"
+    }
+  ],
+  "links": [
+    {
+      "text": "Explore Will Package",
+      "href": "/wills"
+    },
+    {
+      "text": "Explore Trust Package",
+      "href": "/trusts"
+    }
+  ],
   "id": "section-2"
 };
 
 export const section3Props: Section3Props = {
-  "heading": "Section 3",
-  "content": "",
-  "images": [],
-  "links": [],
+  "heading": "Meet Emily Kirk",
+  "content": "Washington University School of Law graduate. Licensed in Missouri & Illinois. Hundreds of wills and trusts delivered with the calm, thorough guidance clients mention in every review.",
+  "images": [
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/2af68cd7-c864-437a-9148-1fae4248531f/E%20Kirk%20Logo%20Text.jpg/:/rs=h:200,cg:true,m/qt=q:95",
+      "alt": "Kirk estate planning logo"
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/2205/:/rs=w:388,h:194,cg:true",
+      "alt": "Attorney portrait"
+    }
+  ],
+  "links": [
+    {
+      "text": "Read Emily's Story",
+      "href": "/emily"
+    }
+  ],
   "id": "section-3"
 };
 
 export const section4Props: Section4Props = {
-  "heading": "Section 4",
-  "content": "",
-  "images": [],
-  "links": [],
+  "heading": "Families trust our process",
+  "content": "“Emily made a daunting task simple.” “Comprehensive, easy, and affordable.” Clients across St. Louis, O'Fallon, Belleville, and beyond highlight the clarity, patience, and fixed pricing they received.",
+  "images": [
+    "https://img1.wsimg.com/isteam/stock/7677/:/rs=w:388,h:194,cg:true",
+    "https://img1.wsimg.com/isteam/stock/1858/:/rs=w:388,h:194,cg:true"
+  ],
+  "links": [
+    {
+      "text": "Read Client Stories",
+      "href": "/reviews"
+    },
+    {
+      "text": "Start Your Plan",
+      "href": "/consultation"
+    }
+  ],
   "id": "section-4"
 };
 
 export const section5Props: Section5Props = {
-  "heading": "Section 5",
-  "content": "",
-  "images": [],
-  "links": [],
+  "heading": "Ready when you are",
+  "content": "168 N Meramec Ave Suite 150, Clayton, MO 63105. Appointments weekdays 9:00 a.m. – 6:00 p.m. with flexible evening availability by request.",
+  "images": [
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/6308/:/rs=w:388,h:194,cg:true",
+      "alt": "Clayton office exterior"
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/4319/:/rs=w:388,h:194,cg:true",
+      "alt": "Meeting room"
+    }
+  ],
+  "links": [
+    {
+      "text": "Call (314) 266-2649",
+      "href": "tel:3142662649"
+    },
+    {
+      "text": "Schedule Consultation",
+      "href": "/consultation"
+    }
+  ],
   "id": "section-5"
 };
 
 export const footerProps: FooterProps = {
-  "siteName": "Kirk Estate Planning - Estate Planning, Wills Trusts",
-  "text": "",
+  "siteName": "Kirk Estate Planning",
+  "text": "Dedicated to wills, trusts, and estate planning for Missouri & Illinois families with transparent pricing and patient guidance.",
   "links": [
     {
       "text": "(314) 266-2649",
@@ -189,14 +265,14 @@ export const footerProps: FooterProps = {
       "internal": false
     },
     {
-      "text": "",
-      "href": "https://www.facebook.com/161073911339056",
+      "text": "Email Emily",
+      "href": "mailto:emily@kirkestateplanning.com",
       "internal": false
     },
     {
-      "text": "",
-      "href": "https://www.linkedin.com/in/emily-kirk-0064516a",
-      "internal": false
+      "text": "Free Consultation",
+      "href": "/consultation",
+      "internal": true
     },
     {
       "text": "Privacy Policy",
@@ -210,11 +286,22 @@ export const footerProps: FooterProps = {
     }
   ],
   "contactInfo": {
-    "phone": "",
-    "email": "",
-    "address": ""
+    "phone": "(314) 266-2649",
+    "email": "emily@kirkestateplanning.com",
+    "address": "168 N Meramec Ave Suite 150, Clayton, MO 63105"
   },
-  "socialLinks": [],
+  "socialLinks": [
+    {
+      "text": "Facebook",
+      "href": "https://www.facebook.com/161073911339056",
+      "internal": false
+    },
+    {
+      "text": "LinkedIn",
+      "href": "https://www.linkedin.com/in/emily-kirk-0064516a",
+      "internal": false
+    }
+  ],
   "html": ""
 };
 
@@ -231,7 +318,7 @@ export const allComponentProps = {
 
 export const siteMetadata = {
   originalUrl: "https://kirkestateplanning.com/",
-  title: "Kirk Estate Planning - Estate Planning, Wills Trusts",
-  description: "",
+  title: "Kirk Estate Planning | Fixed-Fee Wills & Trusts",
+  description: "Fixed-fee wills and trusts for Missouri & Illinois families, guided personally by attorney Emily Kirk.",
   generatedAt: "2025-11-06T06:02:15.613Z"
 };
