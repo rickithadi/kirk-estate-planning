@@ -8,21 +8,27 @@ export default {
   theme: {
     extend: {
       colors: {
-      "primary": "#3b82f6",
-      "secondary": "#64748b",
-      "accent": "#f59e0b"
+  "primary": "#3b82f6",
+  "secondary": "#64748b",
+  "accent": "#f59e0b",
+  "brand-1": "#3b82f6",
+  "brand-2": "#3b82f6",
+  "brand-3": "#3b82f6",
+  "brand-4": "#3b82f6",
+  "brand-5": "#3b82f6",
+  "brand-6": "#3b82f6"
 },
       spacing: {
-      "spacing-1": "4px",
-      "spacing-2": "8px",
-      "spacing-3": "12px",
-      "spacing-4": "16px",
-      "spacing-5": "20px",
-      "spacing-6": "24px",
-      "spacing-7": "32px",
-      "spacing-8": "40px",
-      "spacing-9": "48px",
-      "spacing-10": "64px"
+  "spacing-1": "4px",
+  "spacing-2": "8px",
+  "spacing-3": "12px",
+  "spacing-4": "16px",
+  "spacing-5": "20px",
+  "spacing-6": "24px",
+  "spacing-7": "32px",
+  "spacing-8": "40px",
+  "spacing-9": "48px",
+  "spacing-10": "64px"
 },
       fontFamily: {
         body: ['var(--font-body)'],
@@ -34,24 +40,52 @@ export default {
   daisyui: {
     themes: [
       [
-      "light",
-      "dark",
-      "cupcake",
-      "emerald"
+  "light",
+  "dark",
+  "cupcake",
+  "bumblebee",
+  "emerald",
+  "corporate",
+  "synthwave",
+  "retro",
+  "cyberpunk",
+  "valentine",
+  "halloween",
+  "garden",
+  "forest",
+  "aqua",
+  "lofi",
+  "pastel",
+  "fantasy",
+  "wireframe",
+  "black",
+  "luxury",
+  "dracula",
+  "cmyk",
+  "autumn",
+  "business",
+  "acid",
+  "lemonade",
+  "night",
+  "coffee",
+  "winter",
+  "dim",
+  "nord",
+  "sunset"
 ],
       {
         "custom": {
-        "primary": "#3b82f6",
-        "secondary": "#64748b",
-        "accent": "#f59e0b",
-        "neutral": "#1f2937",
-        "base-100": "#ffffff",
-        "base-200": "#f3f4f6",
-        "base-300": "#e5e7eb",
-        "info": "#06b6d4",
-        "success": "#10b981",
-        "warning": "#f59e0b",
-        "error": "#ef4444"
+  "primary": "#3b82f6",
+  "secondary": "#64748b",
+  "accent": "#f59e0b",
+  "neutral": "#1f2937",
+  "base-100": "#ffffff",
+  "base-200": "#f3f4f6",
+  "base-300": "#e5e7eb",
+  "info": "#06b6d4",
+  "success": "#10b981",
+  "warning": "#f59e0b",
+  "error": "#ef4444"
 }
       }
     ],

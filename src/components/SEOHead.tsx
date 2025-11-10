@@ -11,13 +11,15 @@ interface SEOHeadProps {
 
 const MANAGED_ATTRIBUTE = 'data-managed-by';
 const MANAGED_VALUE = 'seo-head';
-const DEFAULT_SITE_TITLE = "Kirk Estate Planning - Estate Planning, Wills Trusts";
-const DEFAULT_DESCRIPTION = "Wills, trusts, and estates made easy.  Emily Kirk, attorney at law. Services in Missouri and Illinois. Free consultation. Fixed pricing.";
-const DEFAULT_CANONICAL_URL = "https://kirkestateplanning.com/";
-const DEFAULT_AUTHOR = "Kirk Estate Planning - Estate Planning, Wills Trusts";
+const DEFAULT_SITE_TITLE = 'Website';
+const DEFAULT_DESCRIPTION = '';
+const DEFAULT_CANONICAL_URL = '';
+const DEFAULT_AUTHOR = 'Website';
 const DEFAULT_OG_LOCALE = 'en_US';
-const DEFAULT_SITE_IDENTIFIER = "Kirk";
-const DEFAULT_PHONE = "(314) 266-2649";
+const DEFAULT_SITE_IDENTIFIER = 'Website';
+
+
+
 const SEOHead: FC<SEOHeadProps> = ({
   title = DEFAULT_SITE_TITLE,
   description = DEFAULT_DESCRIPTION,
@@ -47,17 +49,17 @@ const SEOHead: FC<SEOHeadProps> = ({
       }
     };
 
-    const upsertMetaByName = (name: string, value?: string | null) => {
+    const upsertMetaByName = (name: string, value: string | undefined) => {
       const selector = `meta[name="${name}"][${MANAGED_ATTRIBUTE}="${MANAGED_VALUE}"]`;
-      const existing = head.querySelector(selector) as HTMLMetaElement | null;
-      const content = value?.trim();
+      const existing = head.querySelector(selector);
+      const content = value && value.trim();
 
       if (!content) {
         removeNode(existing);
         return;
       }
 
-      let meta = existing;
+      let meta = existing as HTMLMetaElement;
       if (!meta) {
         meta = document.createElement('meta');
         meta.setAttribute('name', name);
@@ -68,17 +70,17 @@ const SEOHead: FC<SEOHeadProps> = ({
       meta.setAttribute('content', content);
     };
 
-    const upsertMetaByProperty = (property: string, value?: string | null) => {
+    const upsertMetaByProperty = (property: string, value: string | undefined) => {
       const selector = `meta[property="${property}"][${MANAGED_ATTRIBUTE}="${MANAGED_VALUE}"]`;
-      const existing = head.querySelector(selector) as HTMLMetaElement | null;
-      const content = value?.trim();
+      const existing = head.querySelector(selector);
+      const content = value && value.trim();
 
       if (!content) {
         removeNode(existing);
         return;
       }
 
-      let meta = existing;
+      let meta = existing as HTMLMetaElement;
       if (!meta) {
         meta = document.createElement('meta');
         meta.setAttribute('property', property);
@@ -91,21 +93,21 @@ const SEOHead: FC<SEOHeadProps> = ({
 
     const upsertLink = (
       rel: string,
-      href?: string | null,
+      href: string | undefined,
       extra: Record<string, string> = {},
       id?: string
     ) => {
-      const identifier = id ?? rel;
+      const identifier = id || rel;
       const selector = `link[${MANAGED_ATTRIBUTE}="${MANAGED_VALUE}"][data-id="${identifier}"]`;
-      const existing = head.querySelector(selector) as HTMLLinkElement | null;
-      const resolvedHref = href?.trim();
+      const existing = head.querySelector(selector);
+      const resolvedHref = href && href.trim();
 
       if (!resolvedHref) {
         removeNode(existing);
         return;
       }
 
-      let linkElement = existing;
+      let linkElement = existing as HTMLLinkElement;
       if (!linkElement) {
         linkElement = document.createElement('link');
         head.appendChild(linkElement);
@@ -125,7 +127,7 @@ const SEOHead: FC<SEOHeadProps> = ({
 
     const upsertJsonLd = (id: string, content: string) => {
       const selector = `script[type="application/ld+json"][data-id="${id}"][${MANAGED_ATTRIBUTE}="${MANAGED_VALUE}"]`;
-      let script = head.querySelector(selector) as HTMLScriptElement | null;
+      let script = head.querySelector(selector) as HTMLScriptElement;
 
       if (!script) {
         script = document.createElement('script');
@@ -138,17 +140,17 @@ const SEOHead: FC<SEOHeadProps> = ({
       script.textContent = content;
     };
 
-    const resolvedTitle = title?.trim() ? title : DEFAULT_SITE_TITLE;
+    const resolvedTitle = title && title.trim() ? title : DEFAULT_SITE_TITLE;
     const fullTitle = resolvedTitle.includes(DEFAULT_SITE_IDENTIFIER)
       ? resolvedTitle
       : `${resolvedTitle} | ${DEFAULT_SITE_TITLE}`;
-    const resolvedDescription = description?.trim() ? description : DEFAULT_DESCRIPTION;
-    const resolvedCanonical = canonicalUrl?.trim() ? canonicalUrl : DEFAULT_CANONICAL_URL;
+    const resolvedDescription = description && description.trim() ? description : DEFAULT_DESCRIPTION;
+    const resolvedCanonical = canonicalUrl && canonicalUrl.trim() ? canonicalUrl : DEFAULT_CANONICAL_URL;
 
     document.title = fullTitle;
 
     upsertMetaByName('description', resolvedDescription);
-    upsertMetaByName('keywords', keywords?.trim() ? keywords : undefined);
+    upsertMetaByName('keywords', keywords && keywords.trim() ? keywords : undefined);
     upsertMetaByName('author', DEFAULT_AUTHOR);
     upsertMetaByName('robots', 'index, follow');
     upsertMetaByName('viewport', 'width=device-width, initial-scale=1.0');
@@ -185,7 +187,6 @@ const SEOHead: FC<SEOHeadProps> = ({
       description: resolvedDescription,
     };
 
-    organizationData.telephone = DEFAULT_PHONE;
     const jsonLdContent = JSON.stringify(organizationData, null, 2);
     upsertJsonLd('organization', jsonLdContent);
 

@@ -1,0 +1,37 @@
+[
+  {
+    "session_id": "8d925451-505e-4dd1-92cc-a9652bf846bb",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-modernized-sites-kirk-estate-planning/8d925451-505e-4dd1-92cc-a9652bf846bb.jsonl",
+    "cwd": "/Users/hadi.rickit/modernized-sites/kirk-estate-planning",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input"
+  },
+  {
+    "session_id": "8d925451-505e-4dd1-92cc-a9652bf846bb",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-modernized-sites-kirk-estate-planning/8d925451-505e-4dd1-92cc-a9652bf846bb.jsonl",
+    "cwd": "/Users/hadi.rickit/modernized-sites/kirk-estate-planning",
+    "hook_event_name": "Notification",
+    "message": "Claude needs your permission to use "
+  },
+  {
+    "session_id": "8d925451-505e-4dd1-92cc-a9652bf846bb",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-modernized-sites-kirk-estate-planning/8d925451-505e-4dd1-92cc-a9652bf846bb.jsonl",
+    "cwd": "/Users/hadi.rickit/modernized-sites/kirk-estate-planning",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input"
+  },
+  {
+    "session_id": "dc014a04-3208-4130-a8ef-5bf2ce829eeb",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-modernized-sites/dc014a04-3208-4130-a8ef-5bf2ce829eeb.jsonl",
+    "cwd": "/Users/hadi.rickit/modernized-sites/kirk-estate-planning",
+    "hook_event_name": "Notification",
+    "message": "Claude needs your permission to use Bash"
+  },
+  {
+    "session_id": "dc014a04-3208-4130-a8ef-5bf2ce829eeb",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-modernized-sites/dc014a04-3208-4130-a8ef-5bf2ce829eeb.jsonl",
+    "cwd": "/Users/hadi.rickit/modernized-sites/kirk-estate-planning",
+    "hook_event_name": "Notification",
+    "message": "Claude needs your permission to use Bash"
+  }
+]

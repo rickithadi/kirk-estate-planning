@@ -1,6 +1,6 @@
 # kirk-estate-planning
 
-Modernized version of [https://kirkestateplanning.com/](https://kirkestateplanning.com/)
+Modernized version of [undefined](undefined)
 
 Built with:
 - ⚡ Vite
@@ -26,8 +26,8 @@ npm run preview
 
 ## Original Site
 
-- **URL**: https://kirkestateplanning.com/
-- **Modernized**: 06/11/2025
+- **URL**: undefined
+- **Modernized**: 10/11/2025
 
 ---
 

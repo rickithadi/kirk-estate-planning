@@ -12,9 +12,9 @@ const ThemeController: React.FC<ThemeControllerProps> = ({ className = '' }) => 
   const themes = [
     "light",
     "dark",
-    "cupcake",
-    "emerald",
-    "pastel"
+    "business",
+    "night",
+    "wireframe"
 ];
 
   useEffect(() => {
